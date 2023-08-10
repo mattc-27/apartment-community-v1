@@ -1,0 +1,590 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Montserrat:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Shadows+Into+Light&display=swap');
+
+/* 
+
+|| Fonts
+font-family: 'Cabin', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+
+|| Sections 
+.heroSection,
+.welcomeSection
+.floorPlanSection,
+.featureSection,
+.aboutSection,
+.contactSection,
+
+*/
+
+
+* {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.homeContainer {
+    width: 100%;
+    background-color: #FCF6F5;
+}
+
+
+/*** || HERO SECTION 
+****************************/
+.heroSectionContent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 6 / 6;
+    width: auto;
+}
+
+.div2 {
+    grid-area: 2 / 2 / 5 / 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    flex-basis: 100%;
+    font-family: 'Cabin';
+    font-size: 1.8em;
+    background-color: #21343d99;
+}
+
+.div2 p {
+    width: 90%;
+    line-height: 1.8;
+    text-align: center;
+    font-size: 1.4em;
+    color: #fff;
+    flex-wrap: wrap;
+}
+
+/***** 
+|| WELCOME SECTION 
+*********************/
+.welcomeSectionContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcomeSectionDesc {
+    display: flex;
+    flex-direction: row;
+    background-color: #c6cdff;
+}
+
+.welcomeSectionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    width: 100%;
+    font-size: 1.4em;
+    font-weight: 200;
+    color: #101820;
+    font-family: 'Cabin';
+    background-color: #4c4141;
+}
+
+.welcomeSectionText p {
+    width: 90%;
+    color: #FCF6F5;
+}
+
+.welcomeSectionImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/***** 
+|| FLOORPLAN SECTION 
+*********************/
+.floorPlanText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+
+}
+
+.floorplanSectionContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 3% 0;
+    color: #2c2b2b;
+}
+
+.floorPlanTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-family: 'Cabin';
+    margin: 1% 0;
+    font-size: 1.5em;
+}
+
+.floorPlanText p {
+    width: 80%;
+    line-height: 2;
+    text-align: center;
+    font-family: 'Cabin';
+    font-size: 1.5em;
+}
+
+.floorPlansContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    font-family: 'Montserrat';
+}
+
+.apartment {
+    margin: 2%;
+}
+
+.itemCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 30%;
+    margin: 1% 0;
+    border: 1px solid #FCF6F5;
+    background-color: #4c4141;
+    color: #fff;
+}
+
+.itemDesc,
+.viewButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+}
+
+.itemDesc p {
+    font-weight: 600;
+    font-size: 1.5em;
+    padding: 0.5%;
+    min-width: 0;
+    max-width: 90%;
+    flex-wrap: wrap;
+}
+
+.itemDescImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 3% 0;
+}
+
+.itemName h2 {
+    font-size: 1.75em;
+}
+
+.itemDesc p {
+    line-height: 1.5;
+    font-size: 1em;
+    font-weight: 200;
+    margin: 2% 3%;
+}
+
+.viewButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-self: center;
+    width: 100%;
+}
+
+#viewAptBtn {
+    height: 2.5em;
+    width: 50%;
+    font-size: 1em;
+    font-weight: 500;
+    background: #0ab68b;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.viewApt {
+    position: absolute;
+    z-index: 999;
+    background-color: #313866fd;
+    width: 32%;
+    height: 24em;
+    top: 320%;
+    left: 38%;
+}
+
+#closeAptBtn {
+    background-color: #460814fd;
+    height: 2em;
+    width: 30%;
+    font-size: 1em;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/***** 
+|| FEATURE SECTION
+*********************/
+.featureDesc {
+    displaY: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 3% 0;
+    background-color: #313866;
+}
+
+.featureText {
+    displaY: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    font-size: 1.5em;
+    margin: 2% 0;
+    font-family: 'Cabin';
+}
+
+.featureDesc p {
+    width: 60%;
+    line-height: 1.75;
+    color: #fff;
+}
+
+.featureContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.featureContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    font-family: 'Cabin';
+    background-color: #FCF6F5;
+}
+
+.featureTitle {
+    align-self: center;
+    width: 80%;
+    font-weight: 600;
+    font-size: 1.8em;
+    font-family: 'cabin';
+    margin: 1%;
+}
+
+.featureList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    font-size: 1.25em;
+    color: #2c2b2b;
+    margin: 3% 0;
+    list-style-position: inside;
+}
+
+.featureList ul li {
+    line-height: 2;
+    font-weight: 200;
+    color: #2c2b2b;
+}
+
+/***** 
+|| ABOUT SECTION 
+*********************/
+.aboutSectionDesc {
+    displaY: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #355c7d;
+}
+
+.aboutSectionText {
+    displaY: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    width: 80%;
+    font-size: 1.3em;
+    font-family: 'Cabin';
+    line-height: 2;
+    margin: 3% 0;
+    color: #fff;
+}
+
+
+/***** 
+|| CONTACT SECTION 
+*********************/
+.contactSectionContent {
+    displaY: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 5% 0;
+    font-family: 'Cabin';
+    height: 15em;
+}
+
+.contactSectionTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    font-size: 1.5em;
+    font-family: 'Cabin';
+    color: #2c2b2b;
+}
+
+.contactSectionTitle h2 {
+    align-self: center;
+    text-align: center;
+}
+
+.contactSectionDesc {
+    displaY: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0;
+    font-family: 'Cabin';
+    color: #2c2b2b;
+}
+
+.contactSectionText,
+.contactBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 0;
+    width: 100%;
+    font-size: 1em;
+}
+
+.contactSectionText p {
+    width: 100%;
+    line-height: 2;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-family: 'Cabin';
+    text-align: center;
+}
+
+#contactButton {
+    height: 3em;
+    width: 30%;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: 'Cabin';
+    background-color: #313866;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* || CONTACT FORM  
+************************/
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    background-color: #f3f3f3b5;
+    backdrop-filter: blur(10px);
+    color: #2c2b2b;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: auto;
+    margin: 1% 0;
+}
+
+.formGroup input,
+.formGroup textarea {
+    height: 2em;
+    width: 90%;
+    padding: 1.5%;
+    margin: 0.5% 0;
+    font-size: 1em;
+    border: 0.5px solid #2c2b2b;
+}
+
+form label {
+    align-self: flex-start;
+    height: auto;
+    width: fit-content;
+    max-width: 35%;
+    padding: 1%;
+    margin: 0.5%;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#submitBtn {
+    height: 3em;
+    width: 60%;
+    margin: 0.5% 0;
+    background: #3B4A24;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+
+/***** HEADER & FOOTER 
+****************************/
+header {
+    height: 150px;
+    width: auto;
+    background-color: #355c7d;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-family: 'Cabin', sans-serif;
+}
+
+.headerTitle {
+    flex-grow: 1;
+    color: #FCF6F5;
+    margin: 1%;
+}
+
+.headerTitle h1 {
+    font-size: 2em;
+}
+
+.headerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: #FCF6F5;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin: 1%;
+}
+
+.headerNav a {
+    font-size: 1em;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0.5%;
+}
+
+footer {
+    height: 150px;
+    background-color: #4c4141;
+}
+
+.footerContent {}
+
+.footerContent p {
+    color: #fff;
+}
+
+
+
+
+/*** GRID LAYOUT VERSION ******
+.homeContainerA {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.heroSectionA {
+    grid-area: 1 / 1 / 2 / 6;
+}
+
+.welcomeBannerA {
+    grid-area: 2 / 1 / 3 / 6;
+}
+
+.floorPlanSectionA {
+    grid-area: 3 / 1 / 4 / 6;
+}
+
+.featureSectionA {
+    grid-area: 4 / 1 / 5 / 6;
+}
+
+.AboutSectionA {
+    grid-area: 5 / 1 / 6 / 6;
+}
+
+.contactSectionA {
+    grid-area: 6 / 1 / 7 / 6;
+}
+****/
